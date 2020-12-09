@@ -1,0 +1,46 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000c\u0000a\u0000r\u0000o\u0000_\u0000o\u0000n\u0000l\u0000i\u0000n\u0000e\u0000_\u0000w\u0000e\u0000b\u0000_\u0000n\u0000a\u0000n\u0000g\u0000_\u0000c\u0000a\u0000o\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client-user": "cd ../client/user-front-end && npm run start",
+    "client-admin": "cd ../client/admin-front-end && npm run start",
+    "server-install": "npm install",
+    "client-user-install": "cd ../client/user-front-end && npm install",
+    "client-admin-install": "cd ../client/admin-front-end && npm install",
+    "install-all": "concurrently \"npm run server-install\"  \"npm run client-user-install\" \"npm run client-admin-install\"",
+    "dev": "concurrently \"npm run server\"  \"npm run client-user\" \"npm run client-admin\"",
+    "heroku-postbuild": "cd ../client/user-front-end && npm install && npm run build && cd ../client/admin-front-end && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thanhbuigithub/caro_online_web_nang_cao.git"
+  },
+  "author": "1712780 Hàng Hữu Thế - 1712764 Bùi Chí Thanh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thanhbuigithub/caro_online_web_nang_cao/issues"
+  },
+  "homepage": "https://github.com/thanhbuigithub/caro_online_web_nang_cao#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.0",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "express-validator": "^6.7.0",
+    "google-auth-library": "^6.1.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.4",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.6",
+    "socket.io": "^3.0.3"
+  }
+}

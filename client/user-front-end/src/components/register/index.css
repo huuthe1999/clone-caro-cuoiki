@@ -1,0 +1,69 @@
+.login-container {
+  width: fit-content;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  margin: 10px 0px;
+}
+
+.input-label {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border: 1px solid rgb(185, 184, 184);
+  border-radius: 4px 0px 0px 4px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.register-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.divider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+hr.solid {
+  border-top: 1px solid #bbb;
+  margin: 0 2px;
+  width: 40%;
+  height: 0;
+}
+
+.facebook-button {
+  background-color: #243b68;
+  border: none;
+}
+
+.google-button img {
+  height: 20px;
+  width: 20px;
+}
+
+.google-button {
+  background-color: #c52e24;
+  border: none;
+}
+
+.register-button a#forgot-password {
+  color: gray;
+  text-decoration: none;
+}
+
+.register-button a#register {
+  color: #1d70c4;
+  text-decoration: none;
+}
